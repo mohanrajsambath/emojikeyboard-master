@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<net.mobindustry.emojilib.ObservableLinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/observable_layout"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/observable_layout_background"
+    android:layout_gravity="bottom"
+    android:orientation="horizontal"
+    >
+
+    <ImageView
+        android:id="@+id/smiles"
+        android:layout_width="@dimen/smiles_button_size"
+        android:layout_height="@dimen/smiles_button_size"
+        android:layout_gravity="bottom"
+        android:layout_marginBottom="@dimen/button_margin_3dp"
+        android:padding="@dimen/button_padding_7dp"
+        />
+
+    <EditText
+        android:id="@+id/message_edit_text"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_vertical"
+        android:layout_weight="1"
+        android:hint="@string/edit_text_hint"
+        android:imeOptions="flagNoExtractUi|actionNone"
+        android:maxLines="4"
+        android:minHeight="@dimen/edit_text_max_height"
+        android:textColor="@color/edit_text_text"
+        android:textColorHint="@color/edit_text_hint"
+        />
+
+    <ImageView
+        android:id="@+id/attach"
+        android:layout_width="@dimen/send_button_size"
+        android:layout_height="@dimen/send_button_size"
+        android:layout_gravity="bottom"
+        android:layout_marginBottom="@dimen/button_margin_3dp"
+        android:padding="@dimen/button_padding_7dp"
+        />
+
+</net.mobindustry.emojilib.ObservableLinearLayout>
